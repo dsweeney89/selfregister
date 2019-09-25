@@ -1,46 +1,54 @@
-body{
-    background: linear-gradient(to bottom right , #CDDCEC , #fff);
+body {
+  background: linear-gradient(to bottom right, #cddcec, #fff);
 }
 
-.nav{
-  background: #64A7DE;
+.nav {
+  background: #64a7de;
   margin-bottom: 2vh;
-  
 }
 
-.nav a{
-    color: #fff;
+.nav a {
+  color: #fff;
 }
 
 form.container {
-    background: rgba(255, 255, 255, 0);
+  background: rgba(255, 255, 255, 0);
 }
 
-.card{
-    margin-bottom: 3vh;
-    background: rgb(248, 252, 255); 
-    border-radius: 0px;
+.card {
+  margin-bottom: 3vh;
+  background: rgb(248, 252, 255);
+  border-radius: 0px;
 }
 
-.noborder{
-  
-    box-shadow: none;
-    border-radius: 0px;
-    font-size: 0.85rem;
-    padding: 10px;
+.noborder {
+  box-shadow: none;
+  border-radius: 0px;
+  font-size: 0.85rem;
+  padding: 10px;
 }
 
-.card-header{
-    background: #C1C806;
+.card-header {
+  background: #c1c806;
 }
 
-.inner-form{
-    padding: 2vh;
-    background: rgb(248, 252, 255);
+.inner-form {
+  padding: 2vh;
+  background: rgb(248, 252, 255);
 }
 
-.label{
-    font-weight: 600;
+.label {
+  font-weight: 600;
 }
 
-.form-control:valid~.invalid-feedback {display: none;}
+.error {
+  font-size: 0.8rem;
+  color: red;
+}
+
+.success-msg {
+  margin: 5vh;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}

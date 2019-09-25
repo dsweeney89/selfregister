@@ -11,15 +11,8 @@ class App extends Component {
     render(){
         return(
             <div>
-            <Nav />
-           
-            
+            <Nav />          
             <Form />
-            
-       
-            
-           
-        
             </div>
         )
     }

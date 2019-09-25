@@ -1,6 +1,6 @@
 
 const securityQuestions = [
-"Please Select",
+
 "What was the name of your closest childhood friend?",
 "What is the name of the hospital where you were born?",
 "What is the first and last name of your oldest cousin?",
