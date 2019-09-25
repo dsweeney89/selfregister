@@ -2,20 +2,26 @@ import React, { Component } from "react";
 import "./App.css";
 import productData from "./products";
 
+
+
 class ProductSelect extends Component {
-  getOptions() {
-    let productList = [];
+  
+  getOptions() {                                              //Create an array of Programmes called productEntries by iterating
+    let productList = [];                                     //through the products array from json response
     let i;
     let products = productData.products;
     let length = products.length;
     let productEntries = [];
-
+ 
     for (i = 0; i < length; i++) {
       productEntries.push(products[i].Name);
     }
+ console.log(productList)
 
-    const removeDuplicates = productEntries => {
-      let unique_array = [];
+
+
+  const removeDuplicates = productEntries => {                //Duplicates were found to be present in productEntries
+      let unique_array = [];                                  //these are removed and pushed in a new array to populate the programme <select>
 
       for (let i = 0; i < productEntries.length; i++) {
         if (unique_array.indexOf(productEntries[i]) === -1) {
@@ -43,9 +49,9 @@ class ProductSelect extends Component {
     return productList;
   }
 
-  getClasses(chosen) {
-    if (this.props.selected === "") {
-      return;
+  getClasses(chosen) {                                          //Fine the associated classes of the chosen programme and push them into a new array to populate  
+    if (this.props.selected === "") {                           //the classes <select>. If the programme has not been selected, such as on page load the 
+      return;                                                   //function short circuits with a return
     }
 
     const search = (key, inputArray) => {
