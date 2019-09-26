@@ -274,23 +274,25 @@ class Form extends Component {
     if (!this.state.formisvalid) {
       return (
         <form
-          className="container col-md-8 "
+          className="container col-md-7 col-lg-7"
           onSubmit={this.handleSubmit}
           id="form"
         >
           <Titles />
-          <div className="card">
-            <div className="card-body">
-              <ProductSelect
+          
+              
+      
+          <div className="card inner-form ">
+
+
+          <ProductSelect
                 onChange={this.handleProgramme}
                 selected={this.state.programme}
                 classes={this.state.classes}
               />
-            </div>
-          </div>
-          <div className="card inner-form ">
+              <hr/>
             <div className="form-row mt-md-5">
-              <div className="form-group col-md-4 offset-md-1">
+              <div className="form-group col-md-3 offset-md-2 " >
                 <label htmlFor="title">Title</label>
                 <select
                   className={
@@ -334,7 +336,7 @@ class Form extends Component {
                 )}
               </div>
 
-              <div className="form-group col-md-6">
+              <div className="form-group col-md-5">
                 <label htmlFor="fname">First Name</label>
                 <input
                   type="text"
@@ -355,7 +357,7 @@ class Form extends Component {
             </div>
 
             <div className="form-row">
-              <div className="form-group col-md-4 offset-md-1">
+              <div className="form-group col-md-3 offset-md-2">
                 <label htmlFor="mname">Middle Name</label>
                 <input
                   type="text"
@@ -366,7 +368,7 @@ class Form extends Component {
                 />
               </div>
 
-              <div className="form-group col-md-6">
+              <div className="form-group col-md-5">
                 <label htmlFor="lname">Last Name</label>
                 <input
                   type="text"
@@ -388,7 +390,7 @@ class Form extends Component {
             </div>
 
             <div className="form-row">
-              <div className="form-group col-md-10 offset-md-1">
+              <div className="form-group col-md-6 offset-md-2">
                 <label htmlFor="inputAddress1">Address</label>
 
                 <input
@@ -429,7 +431,7 @@ class Form extends Component {
             </div>
 
             <div className="form-row">
-              <div className="form-group col-md-4 offset-md-1">
+              <div className="form-group col-md-4 offset-md-2">
                 <label htmlFor="">County</label>
                 <select
                   className={
@@ -465,7 +467,7 @@ class Form extends Component {
             </div>
 
             <div className="form-row">
-              <div className="form-group col-md-4 offset-md-1">
+              <div className="form-group col-md-3 offset-md-2">
                 <label htmlFor="phoneprefix">Area Code/Prefix</label>
                 <select
                   className="form-control"
@@ -477,7 +479,7 @@ class Form extends Component {
                 </select>
               </div>
 
-              <div className="form-group col-md-4">
+              <div className="form-group col-md-5">
                 <label htmlFor="phonenumber">Phone Number</label>
                 <input
                   type="text"
@@ -499,7 +501,7 @@ class Form extends Component {
             </div>
 
             <div className="form-row">
-              <div className="form-group col-md-4 offset-md-1">
+              <div className="form-group col-md-4 offset-md-2">
                 <label htmlFor="gender">Gender</label>
                 <select
                   className="form-control"
@@ -541,7 +543,7 @@ class Form extends Component {
               />
             
             </div>
-            <div className="card noborder col-md-8 offset-md-1">
+            <div className="card noborder col-md-7 offset-md-2">
               <div className="card-body form-check" style={{ margin: "auto" }}>
                 <input
                   className="form-check-input"
@@ -556,7 +558,7 @@ class Form extends Component {
             </div>
 
             <div className="form-row">
-              <div className="form-group col-md-8 offset-md-1">
+              <div className="form-group col-md-5 offset-md-2">
                 <label htmlFor="password1">Password</label>
                 <input
                   type="password"
@@ -594,7 +596,7 @@ class Form extends Component {
             </div>
 
             <div className="form-row">
-              <div className="form-group col-md-5 offset-md-1">
+              <div className="form-group col-md-4 offset-md-2">
                 <label htmlFor="securityquestion1">Security Question 1</label>
                 <select
                   className={
@@ -617,7 +619,7 @@ class Form extends Component {
                 )}
               </div>
 
-              <div className="form-group col-md-5">
+              <div className="form-group col-md-4">
                 <label htmlFor="answer1">Answer</label>
                 <input
                   type="text"
@@ -638,7 +640,7 @@ class Form extends Component {
             </div>
 
             <div className="form-row">
-              <div className="form-group col-md-5 offset-md-1">
+              <div className="form-group col-md-4 offset-md-2">
                 <label htmlFor="securityquestion2">Security Question 2</label>
                 <select
                   className={
@@ -661,7 +663,7 @@ class Form extends Component {
                 )}
               </div>
 
-              <div className="form-group col-md-5 ">
+              <div className="form-group col-md-4 ">
                 <label htmlFor="answer2">Answer</label>
                 <input
                   type="text"
@@ -681,7 +683,7 @@ class Form extends Component {
               </div>
             </div>
 
-            <div className="card noborder col-md-8 offset-md-1">
+            <div className="card noborder col-md-8 offset-md-2">
               <div className="card-body form-check" style={{ margin: "auto" }}>
                 <input
                   className="form-check-input"
@@ -715,7 +717,7 @@ class Form extends Component {
     } else {
       return (
         <form
-          className="container col-md-8 "
+          className="container col-md-7 "
           id="form"
           style={{ height: "100vh" }}
         >

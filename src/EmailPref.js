@@ -18,7 +18,7 @@ class EmailPref extends Component {
     if (myclickpreferred === "" || myclickpreferred === false) {
       emailOption = (
         <div className="form-row">
-          <div className="form-group col-md-8 offset-md-1">
+          <div className="form-group col-md-4 offset-md-2">
             <label htmlFor="email">Email</label>
             <input
               type="email"
@@ -40,7 +40,7 @@ class EmailPref extends Component {
     } else if (myclickpreferred === true) {
       emailOption = (
         <div className="form-row">
-          <div className="form-group col-md-8 offset-md-1">
+          <div className="form-group col-md-4 offset-md-2">
             <label htmlFor="myclickemail">MyClick Email</label>
             <input
               type="email"

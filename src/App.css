@@ -4,21 +4,35 @@ body {
 
 .nav {
   background: #64a7de;
-  margin-bottom: 2vh;
+  margin-bottom: 6vh;
 }
 
 .nav a {
   color: #fff;
+  
 }
 
 form.container {
   background: rgba(255, 255, 255, 0);
 }
 
+.form-control{
+ font-size: 0.9rem;
+
+}
+
+label{
+  font-size: 0.8rem;
+
+}
+
 .card {
   margin-bottom: 3vh;
   background: rgb(248, 252, 255);
   border-radius: 0px;
+  -webkit-box-shadow: 10px 11px 55px 1px rgba(0,0,0,0.74);
+-moz-box-shadow: 10px 11px 55px 1px rgba(0,0,0,0.74);
+box-shadow: 10px 11px 55px 1px rgba(0,0,0,0.74);
 }
 
 .noborder {
@@ -26,6 +40,8 @@ form.container {
   border-radius: 0px;
   font-size: 0.85rem;
   padding: 10px;
+  
+  
 }
 
 .card-header {
@@ -35,6 +51,9 @@ form.container {
 .inner-form {
   padding: 2vh;
   background: rgb(248, 252, 255);
+  -webkit-box-shadow: 10px 11px 55px 1px rgba(0,0,0,0.74);
+-moz-box-shadow: 10px 11px 55px 1px rgba(0,0,0,0.74);
+box-shadow: 10px 11px 55px 1px rgba(0,0,0,0.74);
 }
 
 .label {
@@ -51,4 +70,14 @@ form.container {
   justify-content: center;
   align-items: center;
   align-content: center;
+}
+
+hr{
+  margin-bottom: -2vh;
+}
+
+.programme-label{
+  color: rgb(5, 5, 168);
+  font-weight: 600;
+  
 }

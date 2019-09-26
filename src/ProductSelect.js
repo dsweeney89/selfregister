@@ -94,8 +94,8 @@ class ProductSelect extends Component {
     if (this.props.selected !== "" && classes.length >= 2) {
       return (
         <div className="form-row">
-          <div className="form-group col-md-5 offset-md-1">
-            <label htmlFor="programme-select">ICS SKILLS Programme</label>
+          <div className="form-group col-md-4 offset-md-2">
+            <label className = "programme-label" htmlFor="programme-select">ICS SKILLS Programme</label>
             <select
               id="programme-select"
               name="programme"
@@ -108,8 +108,8 @@ class ProductSelect extends Component {
             </select>
           </div>
 
-          <div className="form-group col-md-5">
-            <label htmlFor="programme-classes">Classes</label>
+          <div className="form-group col-md-4">
+            <label className = "programme-label" htmlFor="programme-classes">Class</label>
             <select
               id="classes-select"
               name="classes"
@@ -126,8 +126,8 @@ class ProductSelect extends Component {
     } else {
       return (
         <div className="form-row">
-          <div className="form-group col-md-5 offset-md-1">
-            <label htmlFor="programme-select">ICS SKILLS Programme</label>
+          <div className="form-group col-md-4 offset-md-2">
+            <label className = "programme-label" htmlFor="programme-select">ICS SKILLS Programme</label>
             <select
               id="programme-select"
               name="programme"
