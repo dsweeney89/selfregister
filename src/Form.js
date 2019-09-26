@@ -78,7 +78,7 @@ class Form extends Component {
 
   handleUserInput = event => {
     event.preventDefault();
-    
+
     const { name, value } = event.target;
     let formErrors = this.state.formErrors;
 
@@ -206,10 +206,8 @@ class Form extends Component {
       this.setState({
         formisvalid: !this.state.formisvalid,
       });
-      
     } else {
       console.log("FORM INVALID");
-     
     }
   };
 
@@ -279,20 +277,15 @@ class Form extends Component {
           id="form"
         >
           <Titles />
-          
-              
-      
           <div className="card inner-form ">
-
-
-          <ProductSelect
-                onChange={this.handleProgramme}
-                selected={this.state.programme}
-                classes={this.state.classes}
-              />
-              <hr/>
+            <ProductSelect
+              onChange={this.handleProgramme}
+              selected={this.state.programme}
+              classes={this.state.classes}
+            />
+            <hr />
             <div className="form-row mt-md-5">
-              <div className="form-group col-md-3 offset-md-2 " >
+              <div className="form-group col-md-3 offset-md-2 ">
                 <label htmlFor="title">Title</label>
                 <select
                   className={
@@ -490,7 +483,6 @@ class Form extends Component {
                   }
                   id="phonenumber"
                   name="phonenumber"
-                  
                   onChange={this.handleUserInput}
                   required
                 />
@@ -541,7 +533,6 @@ class Form extends Component {
                 myclickvalue={this.state.myclick}
                 errormsg={this.state.formErrors.email}
               />
-            
             </div>
             <div className="card noborder col-md-7 offset-md-2">
               <div className="card-body form-check" style={{ margin: "auto" }}>
@@ -696,11 +687,14 @@ class Form extends Component {
                 <label className="form-check-label" htmlFor="privacycheck">
                   Please confirm you have read and accepted our Privacy Policy.
                   You can view it{" "}
-                  <a href="https://www.ics.ie/ics/privacy/raw" target="_blank">here</a>
+                  <a href="https://www.ics.ie/ics/privacy/raw" target="_blank">
+                    here
+                  </a>
                 </label>
-                
               </div>
-              <span className="error text-center">{this.state.privacyerror}</span>
+              <span className="error text-center">
+                {this.state.privacyerror}
+              </span>
             </div>
 
             <div className="text-center">
