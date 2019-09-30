@@ -16,7 +16,7 @@ class ProductSelect extends Component {
     for (i = 0; i < length; i++) {
       productEntries.push(products[i].Name);
     }
- console.log(productList)
+
 
 
 
