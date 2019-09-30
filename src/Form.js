@@ -687,7 +687,7 @@ class Form extends Component {
                 <label className="form-check-label" htmlFor="privacycheck">
                   Please confirm you have read and accepted our Privacy Policy.
                   You can view it{" "}
-                  <a href="https://www.ics.ie/ics/privacy/raw" target="_blank">
+                  <a href="https://www.ics.ie/ics/privacy/raw" target="_blank" rel="noopener noreferrer">
                     here
                   </a>
                 </label>

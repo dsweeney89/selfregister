@@ -1,5 +1,7 @@
 body {
-  background: linear-gradient(to bottom right, #cddcec, #fff);
+ 
+  background: #cddcec;
+
 }
 
 .nav {
@@ -30,9 +32,8 @@ label{
   margin-bottom: 3vh;
   background: rgb(248, 252, 255);
   border-radius: 0px;
-  -webkit-box-shadow: 10px 11px 55px 1px rgba(0,0,0,0.74);
--moz-box-shadow: 10px 11px 55px 1px rgba(0,0,0,0.74);
-box-shadow: 10px 11px 55px 1px rgba(0,0,0,0.74);
+ 
+
 }
 
 .noborder {
@@ -51,9 +52,7 @@ box-shadow: 10px 11px 55px 1px rgba(0,0,0,0.74);
 .inner-form {
   padding: 2vh;
   background: rgb(248, 252, 255);
-  -webkit-box-shadow: 10px 11px 55px 1px rgba(0,0,0,0.74);
--moz-box-shadow: 10px 11px 55px 1px rgba(0,0,0,0.74);
-box-shadow: 10px 11px 55px 1px rgba(0,0,0,0.74);
+ 
 }
 
 .label {
@@ -74,6 +73,7 @@ box-shadow: 10px 11px 55px 1px rgba(0,0,0,0.74);
 
 hr{
   margin-bottom: -2vh;
+  
 }
 
 .programme-label{
